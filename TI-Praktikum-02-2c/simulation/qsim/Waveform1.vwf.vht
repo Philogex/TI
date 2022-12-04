@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/04/2022 05:29:32"
+-- Generated on "12/04/2022 12:51:46"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          sortierer
 -- 
@@ -42,7 +42,6 @@ SIGNAL oe_in : STD_LOGIC;
 SIGNAL oe_n_out : STD_LOGIC;
 SIGNAL opt_sens : STD_LOGIC;
 SIGNAL reset : STD_LOGIC;
-SIGNAL timer : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL weiche_out : STD_LOGIC;
 COMPONENT sortierer
 	PORT (
@@ -54,7 +53,6 @@ COMPONENT sortierer
 	oe_n_out : OUT STD_LOGIC;
 	opt_sens : IN STD_LOGIC;
 	reset : IN STD_LOGIC;
-	timer : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
 	weiche_out : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -70,7 +68,6 @@ BEGIN
 	oe_n_out => oe_n_out,
 	opt_sens => opt_sens,
 	reset => reset,
-	timer => timer,
 	weiche_out => weiche_out
 	);
 

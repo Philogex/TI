@@ -2,9 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+--{}reset sachen
+
 entity sortierer is
 	generic (
-		CNT_OFL : positive := 1000000	; -- Sekundentakt Überlauf (overflow) [hinzugefuegt]
+		CNT_OFL : positive := 1000000	; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
 		TIME_WEG_MAX : positive := 15	; -- maximale Werkstück-Durchlaufzeit auf langem Weg (bei geöffneter Schranke) [hinzugefuegt]
 		FWD : std_logic := '0';
 		BCK : std_logic := '1';
@@ -36,7 +38,7 @@ signal weiche : std_logic;
 signal motor_pwr : std_logic;
 signal motor_dir : std_logic;
 
-type main_state_t is (idle, motorFWD_weicheK, motorFWD_weicheM, resetting); --hinzugefuegt
+type main_state_t is (idle, motorFWD_weicheK, motorFWD_weicheM, resetting); --[hinzugefuegt] {resetting loeschen}
 signal main_state, next_main_state : main_state_t;
 
 begin
@@ -44,7 +46,8 @@ begin
 sort_control : process(clk, reset) is
 begin	
 	if (reset = '1') then
-		next_main_state <= resetting; --hinzugefuegt (synchro fehlt)
+		next_main_state <= resetting; --[hinzugefuegt] (synchro fehlt) {zeile mit time_s weg, und state auf idle setzen}
+		time_s <= "00001";				
 	elsif rising_edge(clk) then
 		main_state <= next_main_state; -- z_reg
 				
@@ -85,7 +88,7 @@ begin
 				if not (time_s < TIME_WEG_MAX) then 
 					next_main_state <= idle;
 				end if;
-			when resetting => --ruekwaertsgang muss einsynchronisiert werden
+			when resetting => --ruekwaertsgang muss einsynchronisiert werden {kompletten case loeschen}
 				motor_dir <= BCK;
 				motor_pwr <= RUN;
 				if not (time_s < TIME_WEG_MAX) then
