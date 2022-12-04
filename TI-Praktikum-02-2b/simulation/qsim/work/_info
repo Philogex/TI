@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programming/Quartus/TI-Praktikum-02-2b/simulation/qsim
+Ecounter
+Z1 w1670110627
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 ]LY<>e3?`4Wb8dl1GV_X90
+Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 `f]nQdYHZLbCG_>oYeZOo2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 30
+R0
+Z10 8counter.vho
+Z11 Fcounter.vho
+l0
+L91 1
+V]9ogLOe?9O?1X9T;_injh3
+!s100 lY]]j4k@M4zVo3YM4GiUT0
+Z12 OV;C;2020.1;71
+32
+Z13 !s110 1670110628
+!i10b 1
+Z14 !s108 1670110628.000000
+Z15 !s90 -work|work|counter.vho|
+Z16 !s107 counter.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 7 counter 0 22 ]9ogLOe?9O?1X9T;_injh3
+!i122 30
+l195
+L124 856
+VmP0AR??NB?b6_]`_U0=3i0
+!s100 g46ogIaL?zAb]MW=2_CB[1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Ecounter_vhd_vec_tst
+Z19 w1670110626
+R7
+R8
+!i122 31
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+Vg3lK<gOQ5n8z^81zz;C3c0
+!s100 @m]I_;O^DT`jOiAi_XlH42
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Acounter_arch
+R7
+R8
+Z24 DEx4 work 19 counter_vhd_vec_tst 0 22 g3lK<gOQ5n8z^81zz;C3c0
+!i122 31
+l57
+Z25 L34 101
+VRYi4N`c?^IMYZSHI>C?cX0
+!s100 _aJcUUT63SFKDOnFRLYlD1
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 30
+R0
+R10
+R11
+l0
+L35 1
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+!i122 30
+l76
+L54 28
+Va5ClDYec`9chO`Ne0M1NL2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18

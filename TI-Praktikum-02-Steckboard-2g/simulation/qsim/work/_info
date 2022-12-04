@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programming/Quartus/TI-Praktikum-02-Steckboard-2g/simulation/qsim
+vhard_block
+Z1 !s110 1669036327
+!i10b 1
+!s100 <mmCdWQWY4=b4ZkmJO_=H2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IL:hH8FFd[kgVh05m?71Xd2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1669036325
+Z5 8Schaltkreis.vo
+Z6 FSchaltkreis.vo
+!i122 28
+L0 439 45
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1669036327.000000
+Z9 !s107 Schaltkreis.vo|
+Z10 !s90 -work|work|Schaltkreis.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vSchaltkreis
+R1
+!i10b 1
+!s100 P[eP2z6?fV=XkR:Tl6]SX2
+R2
+IN@:<W:X4n1L>J@clgRHjT1
+R3
+R0
+R4
+R5
+R6
+!i122 28
+L0 32 406
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@schaltkreis
+vSchaltkreis_vlg_vec_tst
+R1
+!i10b 1
+!s100 ^1fJ1o0<fYeMbDHDABKC72
+R2
+In<SAW>_SPfo:T^`cAS9Cd3
+R3
+R0
+w1669036324
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 29
+L0 30 63
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@schaltkreis_vlg_vec_tst

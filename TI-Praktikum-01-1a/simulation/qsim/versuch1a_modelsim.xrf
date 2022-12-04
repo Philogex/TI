@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, D:/Programming/Quartus/TI-Praktikum-01-1a/versuch1a.vhd
+source_file = 1, d:/programs/fpgalite_quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/programs/fpgalite_quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/programs/fpgalite_quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/programs/fpgalite_quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, D:/Programming/Quartus/TI-Praktikum-01-1a/db/versuch1a.cbx.xml
+design_name = hard_block
+design_name = versuch1a
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, versuch1a, 1
+instance = comp, \y~output\, y~output, versuch1a, 1
+instance = comp, \x0~input\, x0~input, versuch1a, 1
+instance = comp, \x1~input\, x1~input, versuch1a, 1
+instance = comp, \x2~input\, x2~input, versuch1a, 1
+instance = comp, \y~0\, y~0, versuch1a, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, versuch1a, 1

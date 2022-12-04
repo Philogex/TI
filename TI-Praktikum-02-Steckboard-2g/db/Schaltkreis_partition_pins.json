@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "q0",
+					"strict" : false
+				},
+				{
+					"name" : "q1",
+					"strict" : false
+				},
+				{
+					"name" : "q2",
+					"strict" : false
+				},
+				{
+					"name" : "CYCLE",
+					"strict" : false
+				},
+				{
+					"name" : "G",
+					"strict" : false
+				},
+				{
+					"name" : "CLCK",
+					"strict" : false
+				},
+				{
+					"name" : "SET",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

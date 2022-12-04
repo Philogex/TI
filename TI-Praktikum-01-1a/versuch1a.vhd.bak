@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity va1 is
+	port(
+	x0, x1, x2	: in std_logic;
+	y				: out std_logic);
+end va1;
+
+architecture va1_arch of va1 is
+begin
+	y <= not(x1) and (x0 or x2);
+end va1_arch;

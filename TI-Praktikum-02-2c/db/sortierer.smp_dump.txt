@@ -1,0 +1,14 @@
+
+State Machine - |sortierer|main_state
+Name main_state.resetting main_state.motorFWD_weicheM main_state.motorFWD_weicheK main_state.idle 
+main_state.idle 0 0 0 0 
+main_state.motorFWD_weicheK 0 0 1 1 
+main_state.motorFWD_weicheM 0 1 0 1 
+main_state.resetting 1 0 0 1 
+
+State Machine - |sortierer|next_main_state
+Name next_main_state.idle next_main_state.motorFWD_weicheM next_main_state.motorFWD_weicheK next_main_state.resetting 
+next_main_state.resetting 0 0 0 0 
+next_main_state.motorFWD_weicheK 0 0 1 1 
+next_main_state.motorFWD_weicheM 0 1 0 1 
+next_main_state.idle 1 0 0 1 

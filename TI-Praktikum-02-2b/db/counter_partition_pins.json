@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cnt_val_act[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_act[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_val_stored_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_enable",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_rd",
+					"strict" : false
+				},
+				{
+					"name" : "switches[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ofl_rd",
+					"strict" : false
+				},
+				{
+					"name" : "switches[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
