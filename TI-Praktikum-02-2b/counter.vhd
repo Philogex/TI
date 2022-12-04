@@ -27,7 +27,7 @@ architecture arch of counter is
 	
 begin
 
-	sync_action: process (reset_n, clk, cnt_enable, ofl_rd, cnt_rd)  
+	process (reset_n, clk)  
 	begin
 		if(reset_n = '1') then
 			intern_counter_ofl <= "00000000";
