@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 
 entity sortierer is
 	generic (
-		CNT_OFL : positive := 1000000	; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
+		CNT_OFL : positive := 20000000; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
 		TIME_WEG_MAX : positive := 15	; -- maximale Werkstück-Durchlaufzeit auf langem Weg (bei geöffneter Schranke) [hinzugefuegt]
 		FWD : std_logic := '0';
 		BCK : std_logic := '1';
