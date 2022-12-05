@@ -27,10 +27,3 @@ begin
 	clk_10Hz <= intern_clk;
 end architecture arch;
 	
-	
-	
-	
-	
-	
-	
-	

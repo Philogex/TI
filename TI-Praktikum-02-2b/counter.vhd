@@ -21,16 +21,17 @@ entity counter is
 end entity counter;
 
 architecture arch of counter is
+	signal counter					: unsigned(23 downto 0);
 	signal intern_counter_async: unsigned(7 downto 0);
 	signal intern_counter_ofl	: unsigned(7 downto 0);
-	signal ofl_val					: unsigned(7 downto 0) := "11111111";
+	signal ofl_val					: unsigned(7 downto 0) := (others => '1');
 	
 begin
 
 	process (reset_n, clk)  
 	begin
 		if(reset_n = '1') then
-			intern_counter_ofl <= "00000000";
+			intern_counter_ofl <= (others => '0');
 		elsif (rising_edge(clk)) then
 			if(ofl_rd = '1') then
 				ofl_val <= unsigned(switches);
@@ -39,30 +40,19 @@ begin
 				intern_counter_async <= intern_counter_ofl;
 			end if;
 			if(cnt_enable = '1') then
-				if(intern_counter_ofl < ofl_val) then
+				if not(counter = 4999999) then
+					counter <= counter + 1;
+				elsif(intern_counter_ofl < ofl_val) then
 					intern_counter_ofl <= intern_counter_ofl + 1;
+					counter <= (others => '0');
 				else
 					intern_counter_ofl <= "00000001";
 				end if;
 			end if;
 		end if; 
 	end process;
-	
 	cnt_val_act <= std_logic_vector(intern_counter_ofl);
 	cnt_val_stored_out <= std_logic_vector(intern_counter_async);
-
-
-
-
-
-
-
-
-
-
-
-
-
 end architecture arch;
 	
 	

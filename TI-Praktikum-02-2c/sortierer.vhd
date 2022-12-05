@@ -2,8 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
---{}reset sachen
-
 entity sortierer is
 	generic (
 		CNT_OFL : positive := 20000000; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
@@ -47,7 +45,7 @@ sort_control : process(clk, reset) is
 begin	
 	if (reset = '1') then
 		next_main_state <= resetting; --[hinzugefuegt] (synchro fehlt) {zeile mit time_s weg, und state auf idle setzen}
-		time_s <= "00001";				
+		time_s <= (others => '0');				
 	elsif rising_edge(clk) then
 		main_state <= next_main_state; -- z_reg
 				
