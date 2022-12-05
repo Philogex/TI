@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity sortierer is
 	generic (
-		CNT_OFL : positive := 20000000; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
-		TIME_WEG_MAX : positive := 15	; -- maximale Werkstück-Durchlaufzeit auf langem Weg (bei geöffneter Schranke) [hinzugefuegt]
+		CNT_OFL : positive := 50000000; -- Sekundentakt Überlauf (overflow) [hinzugefuegt] es kann sein, dass das hier falsch ist, bzw. zu lang
+		TIME_WEG_MAX : positive := 4; -- maximale Werkstück-Durchlaufzeit auf langem Weg (bei geöffneter Schranke) [hinzugefuegt]
 		FWD : std_logic := '0';
 		BCK : std_logic := '1';
 		RUN : std_logic := '1';
@@ -65,7 +65,6 @@ begin
 		
 		case main_state is
 			when idle => -- warte auf opt_sens hi
-				motor_dir <= FWD;
 				motor_pwr <= STP;
 				weiche <= WEG_K;
 				if(opt_sens = '1') then
