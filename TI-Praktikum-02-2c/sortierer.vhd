@@ -30,8 +30,8 @@ end entity sortierer;
 architecture arch of sortierer is
 
 -- signals
-signal cnt : unsigned(20 downto 0); --hinzugefuegt
-signal time_s : unsigned(4 downto 0); 
+signal cnt : unsigned(25 downto 0); --hinzugefuegt
+signal time_s : unsigned(4 downto 0) := (others => '1'); 
 signal weiche : std_logic;
 signal motor_pwr : std_logic;
 signal motor_dir : std_logic;

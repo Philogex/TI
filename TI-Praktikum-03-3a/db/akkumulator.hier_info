@@ -1,0 +1,39 @@
+|akkumulator
+d[0] => cr.DATAB
+d[0] => Add0.IN5
+d[0] => Add1.IN5
+d[1] => cr.DATAB
+d[1] => Add0.IN4
+d[1] => Add1.IN4
+d[2] => cr.DATAB
+d[2] => Add0.IN3
+d[2] => Add1.IN3
+d[3] => cr.DATAB
+d[3] => Add0.IN1
+d[3] => Add0.IN2
+d[3] => Add1.IN1
+d[3] => Add1.IN2
+ld => catch_register.IN0
+sub => ALU[4].OUTPUTSELECT
+sub => ALU[3].OUTPUTSELECT
+sub => ALU[2].OUTPUTSELECT
+sub => ALU[1].OUTPUTSELECT
+sub => ALU[0].OUTPUTSELECT
+e => cr.OUTPUTSELECT
+e => cr.OUTPUTSELECT
+e => cr.OUTPUTSELECT
+e => cr.OUTPUTSELECT
+e => cr.OUTPUTSELECT
+e => catch_register.IN1
+clk => cr[0].CLK
+clk => cr[1].CLK
+clk => cr[2].CLK
+clk => cr[3].CLK
+clk => cr[4].CLK
+c <= cr[0].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cr[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cr[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cr[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cr[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

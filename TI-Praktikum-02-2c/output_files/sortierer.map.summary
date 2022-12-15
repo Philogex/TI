@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Dec 05 09:38:31 2022
+Analysis & Synthesis Status : Successful - Mon Dec 05 15:57:38 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : sortierer
 Top-level Entity Name : sortierer
 Family : MAX 10
-Total logic elements : 11
-    Total combinational functions : 7
-    Dedicated logic registers : 10
-Total registers : 10
+Total logic elements : 62
+    Total combinational functions : 60
+    Dedicated logic registers : 42
+Total registers : 42
 Total pins : 9
 Total virtual pins : 0
 Total memory bits : 0

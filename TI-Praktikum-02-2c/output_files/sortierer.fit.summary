@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Dec 05 09:38:38 2022
+Fitter Status : Successful - Mon Dec 05 15:57:45 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : sortierer
 Top-level Entity Name : sortierer
 Family : MAX 10
 Device : 10M02DCU324C8G
 Timing Models : Final
-Total logic elements : 12 / 2,304 ( < 1 % )
-    Total combinational functions : 10 / 2,304 ( < 1 % )
-    Dedicated logic registers : 10 / 2,304 ( < 1 % )
-Total registers : 10
+Total logic elements : 63 / 2,304 ( 3 % )
+    Total combinational functions : 61 / 2,304 ( 3 % )
+    Dedicated logic registers : 42 / 2,304 ( 2 % )
+Total registers : 42
 Total pins : 9 / 160 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 0 / 110,592 ( 0 % )
