@@ -32,7 +32,7 @@ begin
 				if(ld = '0' and e = '0') then
 					cr <= ALU;
 				elsif(e = '0') then
-					cr <= signed('0' & d); --error?
+					cr <= signed('0' & d);
 				end if;
 		end if;
 		cr_out <= cr;
@@ -45,6 +45,6 @@ begin
 			ALU <= cr_out - signed(d);
 		end if;
 	end process;
-	c <= cr_out(0);
+	c <= cr_out(4);
 	q <= std_logic_vector(cr_out(3 downto 0));
 end arch;
